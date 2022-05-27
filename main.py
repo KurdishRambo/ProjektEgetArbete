@@ -13,7 +13,6 @@ Turtle.bgcolor("Light blue")
 Turtle.register_shape("cookie.gif")
 cookie = turtle.Turtle()
 cookie.shape("cookie.gif")
-cookie.speed(0)
 
 
 # Man börjar med 0 clicks
@@ -29,7 +28,7 @@ pen.penup()
 pen.goto(0, 250)
 pen. write(f"Clicks: {clicks}", align="center", font=("Times New Roman", 32, "normal"))
 
-
+#Skriver ut och placerar info om vad som händer ifall du kommer till >50 clicks.
 points = turtle.Turtle()
 points.hideturtle()
 points.color()
@@ -37,7 +36,7 @@ points.penup()
 points.goto(280,150)
 points. write("50 clicks = 3x", font=("Times New Roman", 20, "normal"))
 
-#Skriver ut och placerar info om vad som händer ifall du kommer till visst antal clicks.
+#Skriver ut och placerar info om vad som händer ifall du kommer till >100 clicks.
 points = turtle.Turtle()
 points.hideturtle()
 points.color()
@@ -45,6 +44,7 @@ points.penup()
 points.goto(280,100)
 points. write("100 clicks = 5x", font=("Times New Roman", 20, "normal"))
 
+#Skriver ut och placerar info om vad som händer ifall du kommer till >200 clicks.
 points = turtle.Turtle()
 points.hideturtle()
 points.color()
@@ -76,5 +76,5 @@ def clicked(x, y):
 
 cookie.onclick(clicked)
 
-#Gör så att spelet inte stängs av direkt.
+#Gör så att spelet inte stängs av direkt. Så Det kan köras.
 turtle.mainloop()
